@@ -55,7 +55,6 @@ class CheckErrors {
     public Errors checkFIO(String [] data) {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < data[i].length(); j++) {
-                // data[i] = data[i].toString();
                 if (Character.isDigit(data[i].charAt(j))) {
                     return new Errors(false, -5, "Фамилия, Имя, Отчество должны состоять только из букв");
                 }
